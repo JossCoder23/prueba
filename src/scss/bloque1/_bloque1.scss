@@ -1,0 +1,60 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque_1 {
+  height: auto;
+  //aca poner el max-width
+}
+
+.bloque1__top {
+  height: 48rem;
+  background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/admision_top_back.webp);
+  position: relative;
+}
+
+.bloque1__top--logo {
+  height: 6rem;
+  width: 17rem;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/logo.webp);
+}
+
+.bloque1__top--title {
+  font-family: v.$poppins;
+  top: 9rem;
+  position: relative;
+  left: 1.5rem;
+  h1 {
+    padding-bottom: 1rem;
+    line-height: 1.1;
+    margin: 0;
+  }
+  .top__title--top {
+    font-size: 2.2rem;
+  }
+  .top__title--bottom {
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+    color: v.$primario;
+  }
+}
+
+.bloque1__top--image {
+  height: 30rem;
+  width: 25rem;
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  background: center/cover no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/chicaadmision.webp);
+}
+
+.bloque1__top--wur {
+  height: 6rem;
+  width: 12rem;
+  position: absolute;
+  top: 22rem;
+  left: 1.5rem;
+  background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/kings.webp);
+}
