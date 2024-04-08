@@ -1,0 +1,9 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque_2 {
+  padding: 2rem 0;
+  height: auto;
+  display: grid;
+  background-color: v.$secundario;
+}

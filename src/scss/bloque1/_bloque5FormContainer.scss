@@ -1,0 +1,207 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.form__container {
+    // background-color: green;
+    height: 95%;
+    width: 95%;
+    // border-radius: 1rem;
+    margin: 2rem 0;
+}
+
+.form__title {
+    padding: 1.5rem 0;
+    h3 {
+        color: black;
+        line-height: .9;
+        height: 100%;
+        font-family: "Work Sans", sans-serif;
+        margin: 0;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 800;
+        @include m.desktop_1440 {
+            font-size: 2.3rem;
+        }
+        @include m.desktop_1920 {
+            font-size: 2rem;
+        }
+    }
+}
+
+.form__grid {
+    // background-color: blue;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr) auto 1fr;
+    justify-items: center;
+    & > input, select {
+        height: 3.3rem;
+        margin-bottom: .8rem;
+        width: 95%;
+        border: 2px solid black;
+        outline: none;
+        padding-left: .7rem;
+        font-size: 1.1rem;
+        font-family: "Work Sans", sans-serif;
+        background-color: transparent;
+        color: black;
+        font-weight: 650;
+        &::placeholder {
+            color: black;
+            font-weight: 650;
+        }
+        @include m.desktop_1920 {
+            font-size: 1.6rem;
+        }
+    }
+    .form__grid--double {
+        height: 3.3rem;
+        margin-bottom: .8rem;
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: .8rem;
+        input {
+            height: 3.3rem;
+            width: 100%;
+            border: 2px solid black;
+            margin-bottom: .8rem;
+            outline: none;
+            padding-left: .7rem;
+            font-size: 1.1rem;
+            background-color: transparent;
+            font-family: "Work Sans", sans-serif;
+            color: black;
+            &::placeholder {
+                color: black;
+                font-weight: 650;
+            }
+            @include m.desktop_1920 {
+                font-size: 1.6rem;
+            }
+        }
+        select {
+            margin-bottom: .8rem;
+            width: 100%; 
+            font-weight: 700;            // color: black;
+        }
+        // grid-template-columns: repeat(2, 1fr);
+    }
+    .terminos,
+    .captcha,
+    .button__enviar {
+        height: 3rem;
+        margin-bottom: .3rem;
+        width: 95%;
+    }
+}
+
+.terminos {
+    // background-color: purple;
+    display: grid;
+    grid-template-columns: 5% 95%;
+    input {
+        color: black;
+        @include m.tablet_768 {
+            transform: scale(.7);
+        }
+        @include m.desktop_1920 {
+            transform: scale(.6);
+        }
+    }
+    label {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: .7rem;
+        font-size: 1.1rem;
+        font-family: "Work Sans", sans-serif;
+        @include m.desktop_1920 {
+            font-size: 1.6rem;
+        }
+    }
+    a {
+        color: black;
+    }
+}
+
+.captcha {
+    height: 5rem !important;
+    // background-color: orange;
+    overflow: hidden;
+    margin-bottom: 1rem !important;
+    display: flex;
+    justify-items: center;
+    @include m.phone_480 {
+        height: 6rem !important;
+    }
+    @include m.tablet_768 {
+        margin-bottom: 2rem !important;
+    }
+}
+
+.g-recaptcha {
+    height: 100%;
+    padding-left: 22%;
+    transform: scale(0.65);
+    transform-origin: 0 0;
+    @include m.phone_360 {
+        padding-left: 15%;    
+    }
+    @include m.phone_390 {
+        padding-left: 18%;
+    }
+    @include m.phone_414 {
+        padding-left: 23%;
+    }
+    @include m.phone_480 {
+        padding-left: 15%;
+        transform: scale(0.8);
+    }
+    @include m.tablet_768 {
+        padding-left: 23%;
+    }
+    @include m.tablet_834 {
+        padding-left: 25%;
+    }
+    @include m.desktop_1020 {
+        padding-left: 10%;
+    }
+    @include m.desktop_1280 {
+        padding-left: 14%;
+    }
+    @include m.desktop_1360 {
+        padding-left: 21%;
+    }
+    @include m.desktop_1440 {
+        padding-left: 24%;
+    }
+    @include m.desktop_1920 {
+        padding-left: 21%;
+    }
+}
+
+.button__enviar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @include m.tablet_768 {
+        height: 4rem !important;
+    }
+    button {
+        cursor: pointer;
+        height: 100%;
+        width: 85%;
+        // border-radius: .8rem;
+        border: none;
+        background-color: black;
+        h3 {
+            color: white;
+            font-size: 1.4rem;
+            font-family: "Work Sans", sans-serif;
+            margin: 0;
+        }
+    } 
+}

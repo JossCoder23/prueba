@@ -1,0 +1,47 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque5__container {
+    // margin: 3rem 0;
+    // background-color: rgba(255, 255, 255, 0.48);
+    background-color: v.$secundario;
+    height: 90%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    // transition: background-color .3s ease-in;
+    // &:hover {
+    //     background-color: rgba(145, 218, 255, .7);
+    // }
+    @include m.tablet_768 {
+        width: 60%;
+    }
+    @include m.desktop_1020 {
+        width: 90%;   
+        margin-right: 7rem;
+        margin-top: 4rem;
+    }
+    @include m.desktop_1280 {
+        margin-right: 13rem;
+    }
+    @include m.desktop_1440 {
+        margin: 0;
+        width: 44rem;
+        height: 67rem;    
+        margin-top: 3rem; 
+    }
+    @include m.desktop_1920 {
+        // margin-right: 18rem;
+        margin-top:6rem;
+        // height: 83rem;    
+    }
+    @include m.desktop_2048 {
+        // height: 100%;    
+    }
+    @include m.desktop_2240 {
+        // margin-right: 31rem;
+    }
+}
+

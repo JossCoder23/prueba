@@ -1,5 +1,4 @@
 @use 'base/variables' as v;
-@use 'base/mixins' as m;
 
 .bloque_1 {
   height: auto;
@@ -10,6 +9,7 @@
   height: 48rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/admision_top_back.webp);
   position: relative;
+  overflow: hidden;
 }
 
 .bloque1__top--logo {
@@ -22,7 +22,7 @@
 }
 
 .bloque1__top--title {
-  font-family: v.$poppins;
+  
   top: 9rem;
   position: relative;
   left: 1.5rem;
@@ -30,6 +30,8 @@
     padding-bottom: 1rem;
     line-height: 1.1;
     margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
   }
   .top__title--top {
     font-size: 2.2rem;
@@ -57,4 +59,13 @@
   top: 22rem;
   left: 1.5rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/kings.webp);
+}
+
+.bloque1__bottom {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 2rem;
 }

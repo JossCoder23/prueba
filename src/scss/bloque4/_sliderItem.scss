@@ -1,0 +1,97 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+//ancho general
+.slider__item2 {
+  margin: 0;
+  margin-top: 1rem;
+  height: auto;
+  position: relative;
+  display: grid !important;
+  width: 100%;
+  align-content: center;
+  // justify-items: center;
+  @include m.tablet_760 {
+    padding-bottom: 8rem;
+  }
+}
+
+//ancho-individual
+.sliderItemInfo2 {
+  width: 70%;
+  height: 30rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-rows: 15rem 15rem;
+  @include m.phone_360 {
+    width: 64%;
+  }
+  @include m.phone_375 {
+    width: 61%;
+  }
+  @include m.phone_390 {
+    width: 58%;
+  }
+  @include m.phone_400 {
+    width: 56%;
+  }
+  @include m.phone_428 {
+    width: 54%;
+  }
+  @include m.phone_480 {
+    width: 45%;
+  }
+  @include m.tablet_760 {
+    width: 80%;
+  }
+  @include m.desktop_1080 {
+    height: 35rem;
+  }
+  @include m.desktop_1280 {
+    width: 82%;
+  }
+  @include m.desktop_1440 {
+    width: 80%;
+  }
+  @include m.desktop_1920 {
+    width: 73%;
+  }
+  .bloque4__text {
+    background-color: #231F1F;
+    display: grid;
+    row-gap: 1.5rem;
+    h1 {
+      color: white;
+      margin: 0;
+      font-weight: 600;
+      font-family: "Work-Sans", sans-serif;
+      font-size: 2rem;
+      text-align: center;
+      padding: 0 2rem;
+      display: grid;
+      align-items: flex-end;
+    }
+    h2 {
+      margin: 0;
+      color: white;
+      font-family: "Work-Sans", sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 0 2rem;
+    }
+  }
+}
+
+.bloqu4__image1 {
+  background: center/cover no-repeat url(../img/campus_central.webp);
+}
+
+.bloqu4__image2 {
+  background: center/cover no-repeat url(../img/campus_molina.webp);
+}
+
+.bloqu4__image3 {
+  background: center/cover no-repeat url(../img/campus_miraflores.webp);
+}
+

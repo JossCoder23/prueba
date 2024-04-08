@@ -1,0 +1,45 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque2__bottom {
+  padding-top: 1rem;
+  background-color: v.$secundario;
+  display: grid;
+  height: auto;
+  grid-template-rows: auto auto;
+}
+
+.bloque2__video {
+  height: 20rem;
+  // background-color: green;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__source {
+  height: 17rem;
+  width: 28rem;
+  border-radius: 1rem;
+  border: 2px solid red;
+}
+
+.bloque2__button  {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    border: none;
+    background-color: v.$primario;
+    cursor: pointer;
+    width: 25rem;
+    height: 3rem;
+    h3 {
+      font-family: "Work-Sans", sans-serif;
+      color: white;
+      margin: 0;
+      font-size: 1.4rem;
+    }
+  }
+}

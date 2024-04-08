@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.slider__container{
+  height: auto;
+  position: relative;
+  // max-width: v.$max-width;
+  width: 100%;
+  // background-color: red;
+  @include m.tablet_760 {
+    max-width: 55rem;
+  }
+  @include m.desktop_1000 {
+    overflow: hidden;
+  }
+  @include m.desktop_1020 {
+    // max-width: v.$max-width-1020;
+    max-width: 80rem;
+  }
+  @include m.desktop_1280 {
+    max-width: 90rem;
+  }
+  @include m.desktop_1440 {
+    max-width: 95rem;
+  }
+  @include m.desktop_1920 {
+    // max-width: v.$max-width-1920;
+  }
+}

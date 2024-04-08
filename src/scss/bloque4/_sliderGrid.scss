@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.slider__grid2 {
+    position: relative;
+    display: flex;
+    height: auto;
+}
+
+.eventsContainer__grid--conversatorios {  
+    display: grid;
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+
+.eventsContainer__grid .swiper-wrapper {
+    transition-timing-function: linear;
+}

@@ -1,0 +1,137 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+// .swiper-button-next::after, .swiper-button-prev::after {
+//   content: "";
+// }
+
+// .swiper-button-next {
+//   height: 3rem;
+//   width: 3rem;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   top: 31rem;
+//   right: 1.5rem;
+//   position: absolute;
+//   z-index: 10;
+//   background-image: url(../img/arrow_right.webp) !important;
+//   @include m.phone_375 {
+//     right: 2rem;
+//     }
+//     @include m.phone_390 {
+//     right: 2.5rem;
+//     }
+//     @include m.phone_400 {
+//     right: 3rem;
+//     }
+//     @include m.phone_428 {
+//     right: 3.5rem;
+//     }
+//   @include m.phone_480 {
+//       right: 5.2rem;
+//   }
+//   @include m.tablet_760 {
+//       right: 4rem;
+//   }
+//   @include m.desktop_1020 {
+//     right: 4%;
+//   }
+//   @include m.desktop_1280 {
+//     right: 2.3%;
+//   }
+//   @include m.desktop_1360 {
+//     right: 3%;
+//   }
+//   @include m.desktop_1440 {
+//     right: 2%;
+//   }
+//   @include m.desktop_1620 {
+//     right: 3.5%;
+//   }
+//   @include m.desktop_1720 {
+//     right: 1%;
+//   }
+//   @include m.desktop_1820 {
+//     right: 3.5%;   
+//   }
+//   @include m.desktop_1920 {
+//     right: -7%;
+//   }
+// }
+
+// .swiper-button-prev {
+//   height: 3rem;
+//   width: 3rem;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   top: 31rem;
+//   position: absolute;
+//   left: 1.5rem;
+//   z-index: 10;
+//   background-image: url(../img/arrow_left2.webp) !important;
+//   @include m.phone_375 {
+//     left: 2rem;
+//     }
+//     @include m.phone_390 {
+//     left: 2.5rem;
+//     }
+//     @include m.phone_400 {
+//     left: 3rem;
+//     }
+//     @include m.phone_428 {
+//     left: 3.5rem;
+//     }
+//   @include m.phone_480 {
+//       left: 5.2rem;
+//   }
+//   @include m.tablet_760 {
+//       left: 4rem;
+//   }
+//   @include m.desktop_1020 {
+//     left: 4%;
+//   }
+//   @include m.desktop_1280 {
+//     left: 2.3%;
+//   }
+//   @include m.desktop_1360 {
+//     left: 3%;
+//   }
+//   @include m.desktop_1440 {
+//     left: 2%;
+//   }
+//   @include m.desktop_1620 {
+//     left: 3.5%;
+//   }
+//   @include m.desktop_1720 {
+//     left: 1%;
+//   }
+//   @include m.desktop_1820 {
+//     left: 3.5%;   
+//   }
+//   @include m.desktop_1920 {
+//     left: -7%;
+//   }
+// }
+
+// .swiper-button-next,
+// .swiper-button-prev {
+//   cursor: pointer;
+//   @include m.phone_320 {
+//       top: 17rem;
+//   }
+//   @include m.tablet_700 {
+//       height: 5.5rem;
+//       width: 5.5rem;
+//   }
+//   @include m.desktop_1020 {
+//     top: 14rem;
+//   }
+//   @include m.desktop_1280 {
+//     top: 17rem;
+//   }
+//   @include m.desktop_2560 {
+//     top: 19rem;
+//   }
+// }
