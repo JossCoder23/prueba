@@ -1,0 +1,8 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque_6 {
+  padding-top: 1rem;
+  height: auto;
+  background-color: v.$tercero;
+}

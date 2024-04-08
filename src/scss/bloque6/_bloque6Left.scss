@@ -1,0 +1,41 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque6__left {
+  height: auto;
+}
+
+.bloque6__left--text {
+  h4 {
+    margin: 0;
+    font-family: "Work-Sans", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0 3rem;
+  }
+}
+
+.bloque6__left--dates {
+  margin-top: 2rem;
+  height: auto;
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: .5rem;
+}
+
+.dates {
+  h1 {
+    font-family: "Work-Sans", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.7rem;
+    line-height: .9;
+    span {
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      font-size: 3rem;
+      color: v.$primario;
+    }
+  }
+}

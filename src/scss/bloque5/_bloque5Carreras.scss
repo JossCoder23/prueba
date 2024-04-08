@@ -1,0 +1,58 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque5__carreras {
+  height: auto;
+  background-color: white;
+  padding: 0 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.carrera {
+  margin-bottom: 2rem;
+  h1 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: .5rem;
+    font-size: 2.5rem;
+  }
+  h2 {
+    margin: 0;
+    font-family: "Work-Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    color: black;
+    position: relative;
+    padding-left: 1.7rem;
+    &::before {
+      content: '';
+      background: no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/point.webp);
+      height: 1rem;
+      width: 1rem;
+      position: absolute;
+      left: .2rem;
+      top: .7rem;
+    }
+  }
+}
+
+.carrera_1 {
+  color: v.$gestion;
+}
+
+.carrera_2 {
+  color: v.$ingenieria;
+}
+
+.carrera_3 {
+  color: v.$educacion;
+}
+
+.carrera_4 {
+  color: v.$ciencias;
+}
+
+.carrera_5 {
+  color: v.$salud;
+}

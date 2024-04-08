@@ -1,0 +1,25 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque5__title {
+  height: 15rem;
+  display: grid;
+  row-gap: .5rem;
+  h1 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;  
+    text-align: center;
+  }
+  .bloque5__title--one {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 700;
+    padding: 0 4rem;
+  }
+  .bloque5__title--two {
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: v.$primario;
+  }
+}
