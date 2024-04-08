@@ -25,11 +25,16 @@
   background-color: white !important;
 }
 
+.swiper-pagination-bullet .swiper-pagination-bullet-active {
+  opacity: 0;
+  margin-bottom: .5rem;
+}
+
 .swiper-pagination-bullet-active {
   width: 4rem !important;
   border-radius: .3rem !important;
   height: 1.1rem !important;
-  transition: all 500ms ease-in;
+  transition: all .1s ease-out;
 }
 
 // .swiper-pagination-bullet-active {
