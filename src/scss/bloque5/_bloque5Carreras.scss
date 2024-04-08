@@ -15,12 +15,13 @@
     font-family: "Poppins", sans-serif;
     margin-bottom: .5rem;
     font-size: 2.5rem;
+    font-weight: 800;
   }
   h2 {
     margin: 0;
     font-family: "Work-Sans", sans-serif;
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 500;
     letter-spacing: .1rem;
     color: black;
     position: relative;
@@ -35,6 +36,145 @@
       top: .7rem;
     }
   }
+}
+
+.carrera__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carrera1__button  {
+  background-color: v.$gestion;
+  border: none;
+  border-radius: 50%;
+  height: 2.8rem;
+  h1 {
+    margin: 0;
+    color: white;
+    
+  }
+}
+
+.button_active_one {
+  transition: all .5s ease-in;
+  background-color: white;
+  border: 2px solid v.$gestion;
+  h1 {
+    transition: all .5s ease-out;
+    color: v.$gestion;
+  }
+}
+
+.carrera2__button {
+  background-color: v.$ingenieria;
+  border: none;
+  border-radius: 50%;
+  height: 2.8rem;
+  h1 {
+    margin: 0;
+    color: white;
+  }
+}
+
+.button_active_two {
+  transition: all .5s ease-in;
+  background-color: white;
+  border: 2px solid v.$ingenieria;
+  h1 {
+    transition: all .5s ease-out;
+    color: v.$ingenieria;
+  }
+}
+
+.carrera3__button {
+  background-color: v.$educacion;
+  border: none;
+  border-radius: 50%;
+  height: 2.8rem;
+  h1 {
+    margin: 0;
+    color: white;
+    
+  }
+}
+
+.button_active_three {
+  transition: all .5s ease-in;
+  background-color: white;
+  border: 2px solid v.$educacion;
+  h1 {
+    transition: all .5s ease-out;
+    color: v.$educacion;
+  }
+}
+
+.carrera4__button {
+  background-color: v.$ciencias;
+  border: none;
+  border-radius: 50%;
+  height: 2.8rem;
+  h1 {
+    margin: 0;
+    color: white;
+    
+  }
+}
+
+.button_active_four {
+  transition: all .5s ease-in;
+  background-color: white;
+  border: 2px solid v.$ciencias;
+  h1 {
+    transition: all .5s ease-out;
+    color: v.$ciencias;
+  }
+}
+
+.carrera5__button {
+  background-color: v.$salud;
+  border: none;
+  border-radius: 50%;
+  height: 2.8rem;
+  h1 {
+    margin: 0;
+    color: white;
+    
+  }
+}
+
+.button_active_five {
+  transition: all .5s ease-in;
+  background-color: white;
+  border: 2px solid v.$salud;
+  h1 {
+    transition: all .5s ease-out;
+    color: v.$salud;
+  }
+}
+
+.carrera1__career {
+  transition: all .3s ease-in;
+  display: none;
+}
+
+.carrera2__career {
+  transition: all .3s ease-in;
+  display: none;
+}
+
+.carrera3__career {
+  transition: all .3s ease-in;
+  display: none;
+}
+
+.carrera4__career {
+  transition: all .3s ease-in;
+  display: none;
+}
+
+.carrera5__career {
+  transition: all .3s ease-in;
+  display: none;
 }
 
 .carrera_1 {
