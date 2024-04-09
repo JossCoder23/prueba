@@ -1,6 +1,31 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
+.carrera1__career {
+  transition: all .3s ease-in;
+  display: none;
+}
+
+.carrera2__career {
+  transition: all .3s ease-in;
+  display: none;
+}
+
+.carrera3__career {
+  transition: all .3s ease-in;
+  display: none;
+}
+
+.carrera4__career {
+  transition: all .3s ease-in;
+  display: none;
+}
+
+.carrera5__career {
+  transition: all .3s ease-in;
+  display: none;
+}
+
 .bloque5__carreras {
   height: auto;
   background-color: white;
@@ -44,6 +69,7 @@
 .carrera__title {
   display: flex;
   justify-content: space-between;
+  position: relative;
   ::before {
     content: '+';
     text-align: center;
@@ -86,85 +112,54 @@
   }
 }
 
-.carrera_1.activa {
-  .carrera1 {
-    ::before {
-      content: '-';
-    }
-  }
-  .carrera1__career {
-    display: grid;
-    transition: display 0s ease 0s;
+.carrera1.gestion1 {
+  ::before {
+    content: '-';
   }
 }
 
-.carrera_2.activa2 {
-  .carrera2 {
-    ::before {
-      content: '-';
-    }
-  }
-  .carrera2__career {
-    display: grid;
-  }
+.carrera1__career.gestion2 {
+  display: grid;
 }
 
-.carrera_3.activa3 {
-  .carrera3 {
-    ::before {
-      content: '-';
-    }
-  }
-  .carrera3__career {
-    display: grid;
+.carrera2.ingenieria1 {
+  ::before {
+    content: '-';
   }
 }
 
-.carrera_4.activa4 {
-  .carrera4 {
-    ::before {
-      content: '-';
-    }
-  }
-  .carrera4__career {
-    display: grid;
-  }
+.carrera2__career.ingenieria2 {
+  display: grid;
 }
 
-.carrera_5.activa5 {
-  .carrera5 {
-    ::before {
-      content: '-';
-    }
-  }
-  .carrera5__career {
-    display: grid;
+.carrera3.educacion1 {
+  ::before {
+    content: '-';
   }
 }
 
-.carrera1__career {
-  transition: all .3s ease-in;
-  display: none;
+.carrera3__career.educacion2 {
+  display: grid;
 }
 
-.carrera2__career {
-  transition: all .3s ease-in;
-  display: none;
+.carrera4.ciencias1 {
+  ::before {
+    content: '-';
+  }
 }
 
-.carrera3__career {
-  transition: all .3s ease-in;
-  display: none;
+.carrera4__career.ciencias2 {
+  display: grid;
 }
 
-.carrera4__career {
-  transition: all .3s ease-in;
-  display: none;
+.carrera5.salud1 {
+  ::before {
+    content: '-';
+  }
 }
 
-.carrera5__career {
-  transition: all .3s ease-in;
-  display: none;
+.carrera5__career.salud2 {
+  display: grid;
 }
 
 .carrera_1 {

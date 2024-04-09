@@ -73,7 +73,7 @@ html(lang="es")
                                     option(value='CarnédeExtranjería') Carnet de Extranjeria
                                     option(value='Pasaporte') Pasaporte
                                 input(id="LEADCF21" type="text" name="LEADCF21" maxlength="20" placeholder="Nro de documento*" required)
-                            input#Mobile(type="text" name="Mobile" maxlength="30" placeholder="Celular*" required)
+                            input#Mobile(type="text" name="Mobile" maxlength="9" pattern="9[0-9]{8}" placeholder="Celular*" required)
                             input#Email(type="text" name="Email" maxlength="100" ftype='email' placeholder="Correo*" required)
                             select#LEADCF6(name="LEADCF6" required)
                                 option(value='' disabled='' selected='') - Seleccionar carrera -
