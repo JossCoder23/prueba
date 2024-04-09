@@ -21,6 +21,9 @@
     @include m.phone_390 {
       padding: 0 4rem;
     }
+    @include m.phone_414 {
+      padding: 0 7rem;
+    }
   }
   h2 {
     margin: 0;  
