@@ -1,4 +1,11 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
 .bloque3__container {
   height: 53rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/back-red.webp);
+  @include m.phone_360 {
+    height: 55rem;
+    background: center/cover no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/admision_top_back.webp);
+  }
 }

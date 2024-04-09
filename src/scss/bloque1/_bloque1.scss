@@ -1,4 +1,5 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .bloque_1 {
   height: auto;
@@ -10,6 +11,12 @@
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/admision_top_back.webp);
   position: relative;
   overflow: hidden;
+  @include m.phone_380 {
+    height: 50rem;
+  }
+  @include m.phone_414 {
+    max-width: 40rem;
+  }
 }
 
 .bloque1__top--logo {
@@ -19,6 +26,9 @@
   top: 1rem;
   left: 1.5rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/logo.webp);
+  @include m.phone_414 {
+    left: 2rem;
+  }
 }
 
 .bloque1__top--title {
@@ -26,6 +36,9 @@
   top: 9rem;
   position: relative;
   left: 1.5rem;
+  @include m.phone_414 {
+    left: 2rem;
+  }
   h1 {
     padding-bottom: 1rem;
     line-height: 1.1;
@@ -35,11 +48,18 @@
   }
   .top__title--top {
     font-size: 2.2rem;
+    @include m.phone_380 {
+      font-size: 2.6rem;
+    }
   }
   .top__title--bottom {
     font-size: 2.5rem;
     letter-spacing: .1rem;
     color: v.$primario;
+    font-weight: 900;
+    @include m.phone_380 {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -59,6 +79,14 @@
   top: 22rem;
   left: 1.5rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/kings.webp);
+  @include m.phone_380 {
+    top: 23rem;
+    width: 14rem;
+    height: 7rem;
+  }
+  @include m.phone_414 {
+    left: 2rem;
+  }
 }
 
 .bloque1__bottom {

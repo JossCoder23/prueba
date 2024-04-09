@@ -77,10 +77,25 @@ html(lang="es")
                             input#Email(type="text" name="Email" maxlength="100" ftype='email' placeholder="Correo*" required)
                             select#LEADCF6(name="LEADCF6" required)
                                 option(value='' disabled='' selected='') - Seleccionar carrera -
-                                option(value='5to de secundaria') 5to. de secundaria
-                                option(value='4to de secundaria') 4to. de secundaria
-                                option(value='3ro de secundaria') 3ro. de secundaria
-                                option(value='Ya termine el colegio') Ya terminé el colegio 
+                                option(value='ADMINISTRACION') Administración
+                                option(value='BIOLOGIA') Biología
+                                option(value='EDUCACION') Educación
+                                option(value='ENFERMERIA') Enfermería 
+                                option(value='ESTOMATOLOGIA') Estomatología 
+                                option(value='FARMACIA Y BIOQUIMICA') Farmacia y Bioquimica 
+                                option(value='INGENIERIA AMBIENTAL') Ingeniería Ambiental 
+                                option(value='INGENIERIA BIOMEDICA') Ingeniería Biomédica  
+                                option(value='INGENIERIA INDUSTRIAL') Ingeniería Industrial 
+                                option(value='INGENIERIA INFORMATICA') Ingeniería Informática  
+                                option(value='LABORATORIO CLINICO') Laboratorio Clínico y Anatomía Patológica 
+                                option(value='MEDICINA') Medicina
+                                option(value='MEDICINA VETERINARIA Y ZOOTECNIA') Medicina Veterinaria y Zootecnia 
+                                option(value='NUTRICION') Nutrición 
+                                option(value='PSICOLOGIA') Psicología 
+                                option(value='RADIOLOGIA') Radiología 
+                                option(value='TERAPIA DE AUDICION, VOZ Y LENGUAJE') Terapia de Audición, Voz y Lenguaje
+                                option(value='TERAPIA FISICA Y REHABILITACION') Terapia Física y Rehabilitación
+                                option(value='TERAPIA OCUPACIONAL') Terapia Ocupacional 
                             select#LEADCF14(name='LEADCF14' required)
                                 option(value='' disabled='' selected='') - ¿A qué año ingresas? -
                                 option(value='5to de secundaria') 5to. de secundaria
@@ -151,7 +166,7 @@ html(lang="es")
                                 #recap3503766000237491098.g-recaptcha(data-sitekey='6LdqkDoiAAAAALdLtgIzFUQelkS9jGZU4W7gjLHG' data-theme='light' data-callback='rccallback3503766000237491098' captcha-verified='false')
                                 #recapErr3503766000237491098(style='font-size:12px;color:red;visibility:hidden;') Error en validación de Captcha. Si no es un robot, inténtelo de nuevo.
                             .button__enviar
-                                button(disabled="true")
+                                button
                                     h3 QUIERO MÁS INFORMACIÓN
                             script.
                                 //- console.log(document.getElementById('tipo-eventos').value)
@@ -410,7 +425,7 @@ html(lang="es")
                     .video__source
                         iframe(width='100%' height='100%' src='https://www.youtube.com/embed/f5DEksOsruk?si=oZ_UV0NEcfu8Pi1_' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen='')
                 .bloque2__button 
-                    button
+                    button(onclick="window.scrollTo({top:450, behavior: 'smooth'});")
                         h3 QUIERO MÁS INFORMACIÓN
         div.bloque_3
             .bloque3__container
@@ -493,7 +508,7 @@ html(lang="es")
                                     h2 Av. Armendariz 947, Miraflores
                     .swiper-pagination2
             .bloque4__button
-                .bloque4__button--container
+                .bloque4__button--container(onclick="window.scrollTo({top:350, behavior: 'smooth'});")
                     h1 QUIERO MÁS INFORMACIÓN
         div.bloque_5
             .bloque5__title

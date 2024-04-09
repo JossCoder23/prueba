@@ -16,12 +16,19 @@
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
+  @include m.phone_375 {
+    height: 25rem;
+  }
 }
 
 .video__source {
   height: 17rem;
   width: 28rem;
   border-radius: 1rem;
+  @include m.phone_375 {
+    height: 20rem;
+    width: 32rem;
+  }
 }
 
 .bloque2__button  {

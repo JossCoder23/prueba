@@ -1,7 +1,13 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
 footer {
   height: 17em;
   background-color: black;
   padding: 2rem 2rem;
   display: grid;
   row-gap: 1rem;
+  @include m.phone_380 {
+    padding: 2rem 3rem;
+  }
 }

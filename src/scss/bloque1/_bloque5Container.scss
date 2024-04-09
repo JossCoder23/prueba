@@ -15,6 +15,12 @@
     // &:hover {
     //     background-color: rgba(145, 218, 255, .7);
     // }
+    @include m.phone_375 {
+        width: 95%;
+    }
+    @include m.phone_414 {
+        width: 90%;    
+    }
     @include m.tablet_768 {
         width: 60%;
     }
