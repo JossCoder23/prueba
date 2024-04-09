@@ -16,6 +16,9 @@
     margin-bottom: .5rem;
     font-size: 2.5rem;
     font-weight: 800;
+    position: relative;
+    // background-color: red;
+    width: 100%;
   }
   h2 {
     margin: 0;
@@ -41,114 +44,101 @@
 .carrera__title {
   display: flex;
   justify-content: space-between;
-}
-
-.carrera1__button  {
-  background-color: v.$gestion;
-  border: none;
-  border-radius: 50%;
-  height: 2.8rem;
-  h1 {
-    margin: 0;
+  ::before {
+    content: '+';
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 3rem;
+    height: 3rem;
+    width: 3rem;
+    font-weight: 500;
     color: white;
-    
+    background-color: blue;
+    border-radius: 50%;
   }
 }
 
-.button_active_one {
-  transition: all .5s ease-in;
-  background-color: white;
-  border: 2px solid v.$gestion;
-  h1 {
-    transition: all .5s ease-out;
-    color: v.$gestion;
+.carrera1 {
+  ::before {
+    background-color: v.$gestion;
+  }
+}
+.carrera2 {
+  ::before {
+    background-color: v.$ingenieria;
+  }
+}
+.carrera3 {
+  ::before {
+    background-color: v.$educacion;
+  }
+}
+.carrera4 {
+  ::before {
+    background-color: v.$ciencias;
+  }
+}
+.carrera5{
+  ::before {
+    background-color: v.$salud;
   }
 }
 
-.carrera2__button {
-  background-color: v.$ingenieria;
-  border: none;
-  border-radius: 50%;
-  height: 2.8rem;
-  h1 {
-    margin: 0;
-    color: white;
+.carrera_1.activa {
+  .carrera1 {
+    ::before {
+      content: '-';
+    }
+  }
+  .carrera1__career {
+    display: grid;
+    transition: display 0s ease 0s;
   }
 }
 
-.button_active_two {
-  transition: all .5s ease-in;
-  background-color: white;
-  border: 2px solid v.$ingenieria;
-  h1 {
-    transition: all .5s ease-out;
-    color: v.$ingenieria;
+.carrera_2.activa2 {
+  .carrera2 {
+    ::before {
+      content: '-';
+    }
+  }
+  .carrera2__career {
+    display: grid;
   }
 }
 
-.carrera3__button {
-  background-color: v.$educacion;
-  border: none;
-  border-radius: 50%;
-  height: 2.8rem;
-  h1 {
-    margin: 0;
-    color: white;
-    
+.carrera_3.activa3 {
+  .carrera3 {
+    ::before {
+      content: '-';
+    }
+  }
+  .carrera3__career {
+    display: grid;
   }
 }
 
-.button_active_three {
-  transition: all .5s ease-in;
-  background-color: white;
-  border: 2px solid v.$educacion;
-  h1 {
-    transition: all .5s ease-out;
-    color: v.$educacion;
+.carrera_4.activa4 {
+  .carrera4 {
+    ::before {
+      content: '-';
+    }
+  }
+  .carrera4__career {
+    display: grid;
   }
 }
 
-.carrera4__button {
-  background-color: v.$ciencias;
-  border: none;
-  border-radius: 50%;
-  height: 2.8rem;
-  h1 {
-    margin: 0;
-    color: white;
-    
+.carrera_5.activa5 {
+  .carrera5 {
+    ::before {
+      content: '-';
+    }
   }
-}
-
-.button_active_four {
-  transition: all .5s ease-in;
-  background-color: white;
-  border: 2px solid v.$ciencias;
-  h1 {
-    transition: all .5s ease-out;
-    color: v.$ciencias;
-  }
-}
-
-.carrera5__button {
-  background-color: v.$salud;
-  border: none;
-  border-radius: 50%;
-  height: 2.8rem;
-  h1 {
-    margin: 0;
-    color: white;
-    
-  }
-}
-
-.button_active_five {
-  transition: all .5s ease-in;
-  background-color: white;
-  border: 2px solid v.$salud;
-  h1 {
-    transition: all .5s ease-out;
-    color: v.$salud;
+  .carrera5__career {
+    display: grid;
   }
 }
 
