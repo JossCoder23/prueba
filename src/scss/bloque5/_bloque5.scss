@@ -2,9 +2,12 @@
 @use 'base/mixins' as m;
 
 .bloque_5 {
-  margin-top: 2rem;
   height: auto;
   position: relative;
   background-color: white;
   margin-bottom: 2rem;
+  @include m.tablet_760 {
+    display: grid;
+    justify-content: center;
+  }
 }

@@ -7,6 +7,7 @@
   display: grid;
   height: auto;
   grid-template-rows: auto auto;
+  background-color: transparent;
 }
 
 .bloque2__video {
@@ -19,6 +20,9 @@
   @include m.phone_375 {
     height: 25rem;
   }
+  @include m.desktop_1020 {
+    height: auto;
+  }
 }
 
 .video__source {
@@ -29,6 +33,14 @@
     height: 20rem;
     width: 32rem;
   }
+  @include m.desktop_1020 {
+    height: 26rem;
+    width: 45rem;
+  }
+  @include m.desktop_1360 {
+    height: 35rem;
+    width: 55rem;
+  }
 }
 
 .bloque2__button  {
@@ -36,17 +48,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include m.desktop_1020 {
+    height: 7rem;
+  }
   button {
     border: none;
     background-color: v.$primario;
     cursor: pointer;
     width: 25rem;
     height: 3rem;
+    @include m.desktop_1020 {
+      width: 33rem;
+      height: 4.5rem;
+    }
     h3 {
       font-family: "Work-Sans", sans-serif;
       color: white;
       margin: 0;
       font-size: 1.4rem;
+      @include m.desktop_1020 {
+        font-size: 1.6rem;
+      }
     }
   }
 }

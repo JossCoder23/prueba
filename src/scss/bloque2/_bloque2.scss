@@ -5,5 +5,31 @@
   padding: 2rem 0;
   height: auto;
   display: grid;
+  justify-content: center;
   background-color: v.$secundario;
+  @include m.desktop_1020 {
+    background: center/cover no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/back_yellow.webp);
+    height: 65rem;
+    z-index: 1;
+  }
+  @include m.desktop_1360 {
+    height: 78rem;  
+  }
+}
+
+.bloque2__container {
+  display: grid;
+ 
+  // background-color: red;
+  // background-color: red;
+  
+
+  @include m.desktop_1020 {
+    width: 90rem;
+    z-index: 2;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include m.desktop_1360 {
+    width: v.$max-width-1360;
+  }
 }

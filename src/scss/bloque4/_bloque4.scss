@@ -5,6 +5,9 @@
   height: auto;
   background-color: v.$tercero;
   position: relative;
+  @include m.desktop_1020 {
+    background: center/cover no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/back_gray.webp);
+  }
 }
 
 .swiper-pagination2 {

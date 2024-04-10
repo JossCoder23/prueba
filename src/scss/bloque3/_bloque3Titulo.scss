@@ -3,6 +3,9 @@
 
 .bloque3__title {
   padding-top: 3.5rem;
+  @include m.desktop_1020 {
+    padding-top: 5rem;
+  }
   .bloque3__one {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -10,6 +13,12 @@
     color: white;
     text-align: center;
     padding-bottom: .8rem;
+    @include m.desktop_1020 {
+      font-size: 2.3rem;
+    }
+    @include m.desktop_1360 {
+      font-size: 2.8rem;
+    }
   }
   .bloque3__two {
     margin: 0;
@@ -18,5 +27,23 @@
     text-align: center;
     font-weight: 900;
     color: v.$secundario;
+    @include m.desktop_1020 {
+      display: none;
+    }
+  }
+  .bloque3__desktop {
+    display: none;
+    @include m.desktop_1020 {
+      display: grid;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      font-size: 2.7rem;
+      text-align: center;
+      font-weight: 900;
+      color: v.$secundario;
+    }
+    @include m.desktop_1360 {
+      font-size: 3.5rem;  
+    }
   }
 }

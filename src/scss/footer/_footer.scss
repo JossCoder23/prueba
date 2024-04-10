@@ -2,12 +2,34 @@
 @use 'base/mixins' as m;
 
 footer {
-  height: 17em;
+  height: 17rem;
   background-color: black;
   padding: 2rem 2rem;
   display: grid;
-  row-gap: 1rem;
+  justify-content: center;
+  // row-gap: 1rem;
   @include m.phone_380 {
     padding: 2rem 3rem;
+  }
+  @include m.desktop_1360 {
+    height: 23rem;
+  }
+}
+
+.footer__container {
+
+  // background-color: green;
+  display: grid;
+  @include m.tablet_760 {
+    height: 100%;
+    width: 55rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  @include m.desktop_1020 {
+    width: 90rem;
+  }
+  @include m.desktop_1360 {
+    width: v.$max-width-1360;
   }
 }

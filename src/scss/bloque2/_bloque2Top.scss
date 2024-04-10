@@ -1,5 +1,22 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
 .bloque2__top {
   height: 25rem;
   width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/cayetano_letters.webp);
+  h1, h2 {
+    margin: 0;
+    font-weight: 900;
+    line-height: 1.5;
+    font-size: 1.8rem;
+  }
+  @include m.desktop_1020 {
+    // background-color: red;
+    height: 100%;
+    transform: scale(.8);
+  }
+
 }

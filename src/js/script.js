@@ -14,11 +14,11 @@ window.addEventListener("load", () => {
                 slidesPerColumn: 1
             },
             999: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 slidesPerColumn: 1
             },
             1280: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 slidesPerColumn: 1
             }
         }
@@ -79,6 +79,15 @@ window.addEventListener("load", () => {
         button5.classList.toggle("salud1");
         container__career5.classList.toggle("salud2");
     })
+
+    let bloque2__button = document.querySelector('.change_button');
+    let bloque4__button = document.querySelector('.bloque4__button--container');
+
+    if(screen.width > 1020 ) {
+        bloque2__button.setAttribute("onclick", "window.scrollTo({top:50, behavior: 'smooth'});")
+        bloque4__button.setAttribute("onclick", "window.scrollTo({top:50, behavior: 'smooth'});")
+    }
+
 })
 
 

@@ -1,3 +1,6 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
 .bloque6__right {
   height: auto;
   display: flex;
@@ -11,4 +14,12 @@
   width: 28rem;
   height: 23rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/map.webp);
+  @include m.desktop_1020 {
+    width: 45rem;
+    height: 38rem;
+  }
+  @include m.desktop_1360 {
+    width: 55rem;
+    height: 43rem;
+  }
 }

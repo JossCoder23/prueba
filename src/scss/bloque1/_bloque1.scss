@@ -3,7 +3,28 @@
 
 .bloque_1 {
   height: auto;
+  position: relative;
   //aca poner el max-width
+  @include m.desktop_1020 {
+    display: grid;
+    justify-content: center;
+    // background-color: red;
+  }
+}
+
+.bloque1__container {
+  height: auto;
+  position: relative;
+  // background-color: red;
+  @include m.desktop_1020 {
+    width: 90rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/admision_top_back.webp);
+  }
+  @include m.desktop_1360 {
+    width: v.$max-width-1360;
+  }
 }
 
 .bloque1__top {
@@ -17,6 +38,18 @@
   @include m.phone_414 {
     max-width: 40rem;
   }
+  @include m.tablet_760 {
+    max-width: 100%;
+    height: 60rem;
+  }
+  @include m.desktop_1020 {
+    background: none;
+    height: 63rem;
+    position:initial;
+  }
+  @include m.desktop_1360 {
+    height: 73rem;
+  }
 }
 
 .bloque1__top--logo {
@@ -29,6 +62,22 @@
   @include m.phone_414 {
     left: 2rem;
   }
+  @include m.tablet_760 {
+    top: 3rem;
+    left: 12rem;
+    height: 9rem;
+    width: 24rem;
+  }
+  @include m.desktop_1020 {
+    top: 9rem;
+    left: 0rem;
+  }
+  @include m.desktop_1360 {
+    top: 16rem;
+    left: -2rem;
+    height: 8rem;
+    width: 29rem;
+  }
 }
 
 .bloque1__top--title {
@@ -38,6 +87,17 @@
   left: 1.5rem;
   @include m.phone_414 {
     left: 2rem;
+  }
+  @include m.tablet_760 {
+    top: 13rem;
+    left: 12rem;
+  }
+  @include m.desktop_1020 {
+    top: 24rem;
+    left: 0;
+  }
+  @include m.desktop_1360 {
+    top: 29rem;  
   }
   h1 {
     padding-bottom: 1rem;
@@ -51,6 +111,22 @@
     @include m.phone_380 {
       font-size: 2.6rem;
     }
+    @include m.tablet_760 {
+      font-size: 3rem;
+    }
+    @include m.desktop_1020 {
+      display: none;
+    }
+  }
+  .topTitle__desktop {
+    display: none;
+    @include m.desktop_1020 {
+      display: grid;
+      font-size: 2.5rem;
+    }
+    @include m.desktop_1360 {
+      font-size: 3.2rem;
+    }
   }
   .top__title--bottom {
     font-size: 2.5rem;
@@ -59,6 +135,15 @@
     font-weight: 900;
     @include m.phone_380 {
       font-size: 3rem;
+    }
+    @include m.tablet_760 {
+      font-size: 4rem;
+    }
+    @include m.desktop_1020 {
+      font-size: 3.5rem;
+    }
+    @include m.desktop_1360 {
+      font-size: 4rem;
     }
   }
 }
@@ -70,6 +155,21 @@
   bottom: 0;
   right: 1rem;
   background: center/cover no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/chicaadmision.webp);
+  @include m.tablet_760 {
+    height: 36rem;
+    width: 28rem;
+    right: 15rem;
+  }
+  @include m.desktop_1020 {
+    right: 35.5rem;
+    height: 42rem;
+    width: 34rem;
+  }
+  @include m.desktop_1360 {
+    height: 47rem;
+    width: 39rem;
+    right: 34.5rem;
+  }
 }
 
 .bloque1__top--wur {
@@ -87,6 +187,22 @@
   @include m.phone_414 {
     left: 2rem;
   }
+  @include m.tablet_760 {
+    width: 18rem;
+    height: 10rem;
+    top: 29rem;
+    left: 12rem;
+  }
+  @include m.desktop_1020 {
+    width: 16rem;
+    left: 0;
+    top: 35rem;
+  }
+  @include m.desktop_1360 {
+    width: 18rem;
+    height: 11rem;
+    top: 42rem;
+  }
 }
 
 .bloque1__bottom {
@@ -96,4 +212,8 @@
   justify-content: center;
   overflow: hidden;
   margin-bottom: 2rem;
+  @include m.desktop_1020 {
+    margin: 0;
+    justify-content: flex-end;
+  }
 }

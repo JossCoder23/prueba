@@ -1,0 +1,12 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque5__image {
+  display: none;
+  @include m.desktop_1020 {
+    display: block;
+    background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/carreras.webp);  
+    height: auto;
+    width: 25rem;  
+  }
+}

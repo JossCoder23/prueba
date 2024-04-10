@@ -3,15 +3,24 @@
 
 .bloque4__titulo {
   padding-top: 3rem;
+  @include m.desktop_1020 {
+    padding-top: 6rem;
+  }
   h1 {
     font-family: "Poppins", sans-serif;
     margin: 0;
     text-align: center;
     font-size: 2.5rem;
+    @include m.desktop_1360 {
+      font-size: 3rem;
+    }
     span {
       font-size: 2.8rem;
       font-weight: 900;
       color: v.$primario;
+      @include m.desktop_1360 {
+        font-size: 3.5rem;
+      }
     }
   }
 }

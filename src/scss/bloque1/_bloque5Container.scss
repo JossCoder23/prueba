@@ -21,33 +21,36 @@
     @include m.phone_414 {
         width: 90%;    
     }
-    @include m.tablet_768 {
-        width: 60%;
+    @include m.tablet_760 {
+        width: 70%;
     }
     @include m.desktop_1020 {
-        width: 90%;   
-        margin-right: 7rem;
-        margin-top: 4rem;
+        // width: 90%;   
+        width: 37rem;
+        height: 53rem;
+        // margin-right: 7rem;
+        // margin-top: 4rem;
     }
-    @include m.desktop_1280 {
-        margin-right: 13rem;
-    }
-    @include m.desktop_1440 {
-        margin: 0;
-        width: 44rem;
-        height: 67rem;    
-        margin-top: 3rem; 
-    }
-    @include m.desktop_1920 {
-        // margin-right: 18rem;
-        margin-top:6rem;
-        // height: 83rem;    
-    }
-    @include m.desktop_2048 {
-        // height: 100%;    
-    }
-    @include m.desktop_2240 {
-        // margin-right: 31rem;
-    }
+    // @include m.desktop_1280 {
+
+    //     margin-right: 13rem;
+    // }
+    // @include m.desktop_1440 {
+    //     margin: 0;
+    //     width: 44rem;
+    //     height: 67rem;    
+    //     margin-top: 3rem; 
+    // }
+    // @include m.desktop_1920 {
+    //     // margin-right: 18rem;
+    //     margin-top:6rem;
+    //     // height: 83rem;    
+    // }
+    // @include m.desktop_2048 {
+    //     // height: 100%;    
+    // }
+    // @include m.desktop_2240 {
+    //     // margin-right: 31rem;
+    // }
 }
 

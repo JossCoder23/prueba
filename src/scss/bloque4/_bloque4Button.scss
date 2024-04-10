@@ -2,16 +2,25 @@
 @use 'base/mixins' as m;
 
 .bloque4__button {
-  height: 6rem;
-  margin: 2rem 0;
+  height: 10rem;
+  margin: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+  @include m.desktop_1020 {
+    align-items: flex-start;
+    height: 10rem;
+  }
 }
 
 .bloque4__button--container {
   height: 3.5rem;
   width: 70%;
   background-color: v.$primario;
+  cursor: pointer;
+  @include m.desktop_1020 {
+    width: 35rem;
+  }
   h1 {
     font-family: "Work-Sans", sans-serif;
     margin: 0;

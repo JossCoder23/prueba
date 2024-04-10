@@ -5,4 +5,8 @@
   padding-top: 1rem;
   height: auto;
   background-color: v.$tercero;
+  @include m.tablet_760 {
+    display: grid;
+    justify-content: center;
+  }
 }

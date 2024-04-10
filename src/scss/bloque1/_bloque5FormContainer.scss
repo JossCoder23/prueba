@@ -156,27 +156,27 @@
         padding-left: 15%;
         transform: scale(0.8);
     }
-    @include m.tablet_768 {
-        padding-left: 23%;
+    @include m.tablet_760 {
+        padding-left: 29%;
     }
     @include m.tablet_834 {
         padding-left: 25%;
     }
     @include m.desktop_1020 {
-        padding-left: 10%;
+        padding-left: 17%;
     }
     @include m.desktop_1280 {
         padding-left: 14%;
     }
     @include m.desktop_1360 {
-        padding-left: 21%;
+        padding-left: 15%;
     }
-    @include m.desktop_1440 {
-        padding-left: 24%;
-    }
-    @include m.desktop_1920 {
-        padding-left: 21%;
-    }
+    // @include m.desktop_1440 {
+    //     padding-left: 24%;
+    // }
+    // @include m.desktop_1920 {
+    //     padding-left: 21%;
+    // }
 }
 
 .button__enviar {

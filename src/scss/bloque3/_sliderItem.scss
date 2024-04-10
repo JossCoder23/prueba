@@ -13,6 +13,9 @@
     @include m.tablet_760 {
       padding-bottom: 8rem;
     }
+    @include m.desktop_1020 {
+      padding-bottom: 0;
+    }
 }
 
 //ancho-individual
@@ -43,8 +46,9 @@
   @include m.tablet_760 {
     width: 80%;
   }
-  @include m.desktop_1080 {
+  @include m.desktop_1020 {
     height: 35rem;
+    width: 100%;
   }
   @include m.desktop_1280 {
     width: 82%;
@@ -81,6 +85,12 @@
       span {
         font-weight: 800;
       }
+      @include m.desktop_1020 {
+        padding: 0 1rem;
+      }
+      @include m.desktop_1360 {
+        font-size: 1.8rem;
+      }
     }
   }
 }
@@ -88,22 +98,55 @@
 .image_1 {
   transform: scale(.6);
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/icon-1.webp);
+  @include m.desktop_1020 {
+    margin-left: 2rem;
+  }
+  @include m.desktop_1360 {
+    margin-left: 0;
+  }
 }
 
 .image_2 {
   transform: scale(.6);
   margin-left: 2rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/icon-2.webp);
+  @include m.tablet_760 {
+    margin-left: 1rem;
+  }
+  @include m.desktop_1020 {
+    margin-left: 2rem;
+  }
+  @include m.desktop_1360 {
+    margin-left: 0;
+  }
 }
 
 .image_3 {
   transform: scale(.6);
   margin-left: 2rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/icon-3.webp);
+  @include m.tablet_760 {
+    margin-left: 1rem;
+  }
+  @include m.desktop_1020 {
+    margin-left: 2rem;
+  }
+  @include m.desktop_1360 {
+    margin-left: 0;
+  }
 }
 
 .image_4 {
   transform: scale(.6);
   margin-left: 2rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/icon-4.webp);
+  @include m.tablet_760 {
+    margin-left: 1rem;
+  }
+  @include m.desktop_1020 {
+    margin-left: 2rem;
+  }
+  @include m.desktop_1360 {
+    margin-left: 0;
+  }
 }

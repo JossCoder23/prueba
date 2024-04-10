@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque6__container {
+  @include m.tablet_760 {
+    width: 60rem;
+  }
+  @include m.desktop_1020 {
+    width: 90rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include m.desktop_1360 {
+    width: v.$max-width-1360;
+  }
+}

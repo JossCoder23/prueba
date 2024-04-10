@@ -7,14 +7,11 @@
     height: auto;
 }
 
-.eventsContainer__grid--conversatorios {  
-    display: grid;
-    position: relative;
-    display: flex;
-    width: 100%;
-}
-
-
 .eventsContainer__grid .swiper-wrapper {
     transition-timing-function: linear;
+}
+.swiper-wrapper {
+    @include m.desktop_1020 {
+        height: auto !important;
+    }
 }
