@@ -11,7 +11,7 @@
     align-content: center;
     justify-items: center;
     @include m.tablet_760 {
-      padding-bottom: 8rem;
+      // padding-bottom: 8rem;
     }
     @include m.desktop_1020 {
       padding-bottom: 0;

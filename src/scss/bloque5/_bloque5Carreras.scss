@@ -17,6 +17,18 @@
   }
 }
 
+.career_attention {
+  color: black;
+  font-family: "Work-Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  &::before {
+    content: '';
+    background: transparent;
+  }
+}
+
 .carrera3__career {
   transition: all .3s ease-in;
   display: none;
@@ -232,11 +244,11 @@
   color: v.$salud;
   @include m.desktop_1020 {
     position: relative;
-    top: -16rem;
+    top: -10rem;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
   }
   @include m.desktop_1360 {
-    top: -14rem;
+    top: -9rem;
   }
 }

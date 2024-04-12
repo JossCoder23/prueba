@@ -16,7 +16,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 2.5rem !important;
+  bottom: 7.5rem !important;
+  @include m.phone_360 {
+    bottom: 9.5rem !important;
+  }
 }
 
 
@@ -32,3 +35,34 @@
 }
 
 //SWIPER-PAGINATION-BULLET-ACTIVE - esta en globales
+
+.bloque3__anotation {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  @include m.phone_360 {
+    margin-top: 3rem;
+  }
+  @include m.desktop_1020 {
+    margin-top: 2rem;
+  }
+  @include m.desktop_1360 {
+    margin-top: 3rem;
+  }
+  h3 {
+    font-family: "Work-Sans", sans-serif;
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    padding: .5rem 0;
+    @include m.tablet_760 {
+      font-size: 1.5rem;
+    }
+    @include m.desktop_1020 {
+      font-size: 1.7rem;
+    }
+  }
+}
