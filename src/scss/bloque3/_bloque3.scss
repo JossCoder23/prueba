@@ -16,9 +16,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 7.5rem !important;
+  bottom: 2.5rem !important;
   @include m.phone_360 {
-    bottom: 9.5rem !important;
+    bottom: 2.5rem !important;
   }
 }
 
@@ -36,30 +36,37 @@
 
 //SWIPER-PAGINATION-BULLET-ACTIVE - esta en globales
 
-.bloque3__anotation {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  @include m.phone_360 {
-    margin-top: 3rem;
-  }
-  @include m.desktop_1020 {
-    margin-top: 2rem;
-  }
-  @include m.desktop_1360 {
-    margin-top: 3rem;
-  }
-  h3 {
-    font-family: "Work-Sans", sans-serif;
-    margin: 0;
-    font-size: 1rem;
-    color: white;
-    height: 100%;
-    width: 80%;
-    text-align: center;
-    padding: .5rem 0;
-    @include m.tablet_760 {
-      font-size: 1.3rem;
-    }
+// .bloque3__anotation {
+//   // margin-top: 2rem;
+//   font-family: "Work-Sans", sans-serif;
+//     margin: 0;
+//     font-size: 1rem;
+//     color: white;
+//     height: 3rem;
+//     // height: 100%;
+//     // width: 80%;
+//     text-align: center;
+//     line-height: .5;
+//     // padding: .5rem 0;
+//   // @include m.phone_360 {
+//   //   margin-top: 3rem;
+//   // }
+//   @include m.desktop_1020 {
+//     margin-top: 2rem;
+//   }
+//   @include m.desktop_1360 {
+//     margin-top: 3rem;
+//   }
+// }
+
+.other {
+  font-family: "Work-Sans", sans-serif;
+  margin: 1rem 0 0 0;
+  padding: 0;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  @include m.desktop_1280 {
+    font-size: 1.3rem;
   }
 }

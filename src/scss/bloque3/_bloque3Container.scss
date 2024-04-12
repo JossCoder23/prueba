@@ -2,11 +2,10 @@
 @use 'base/mixins' as m;
 
 .bloque3__container {
-  height: 58rem;
+  height: 56rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/back-red.webp);
   position: relative;
   @include m.phone_360 {
-    height: 60rem;
     background: center/cover no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/admision_top_back.webp);
   }
   @include m.desktop_1020 {
