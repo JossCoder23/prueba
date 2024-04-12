@@ -1,5 +1,14 @@
 window.addEventListener("load", () => {
    
+    let date1 = document.querySelector('.bloque3__years');
+    let date2 = document.querySelector('.bloque3__convenios');
+    let date3 = document.querySelector('.bloque3__egresados');
+    let date4 = document.querySelector('.bloque3__talleres');
+    let cantidad1 = 0;
+    let cantidad2 = 0;
+    let cantidad3 = 0;
+    let cantidad4 = 0;
+
     var slider1 = new Swiper(".mySwiper", {
         pagination: {
             el: ".swiper-pagination",
@@ -86,6 +95,40 @@ window.addEventListener("load", () => {
     if(screen.width > 1020 ) {
         bloque2__button.setAttribute("onclick", "window.scrollTo({top:50, behavior: 'smooth'});")
         bloque4__button.setAttribute("onclick", "window.scrollTo({top:50, behavior: 'smooth'});")
+    }
+
+    if(screen.height > 500) {
+        let tiempo1 = setInterval(() => {
+            cantidad1 += 1;
+            date1.textContent = cantidad1;
+            if( cantidad1 === 63 ) {
+                clearInterval( tiempo1 );
+            }
+        }, 80);
+            
+        let tiempo2 = setInterval(() => {
+            cantidad2 += 1;
+            date2.textContent = cantidad2;
+            if( cantidad2 === 200 ) {
+                clearInterval( tiempo2 );
+            }
+        }, 35);
+    
+        let tiempo3 = setInterval(() => {
+            cantidad3 += 1;
+            date3.textContent = cantidad3;
+            if( cantidad3 === 97 ) {
+                clearInterval( tiempo3 );
+            }
+        }, 70);
+    
+        let tiempo4 = setInterval(() => {
+            cantidad4 += 1;
+            date4.textContent = cantidad4;
+            if( cantidad4 === 15 ) {
+                clearInterval( tiempo4 );
+            }
+        }, 150);
     }
 
 })
