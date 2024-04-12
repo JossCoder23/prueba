@@ -98,6 +98,9 @@
 .image_1 {
   transform: scale(.6);
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/01.webp);
+  @include m.phone_414 {
+    margin-left: 1rem;
+  }
   @include m.desktop_1020 {
     margin-left: 2rem;
   }
@@ -113,6 +116,9 @@
   transform: scale(.6);
   margin-left: 1rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/02.webp);
+  @include m.phone_414 {
+    margin-left: 2rem;
+  }
   @include m.tablet_760 {
     margin-left: 1rem;
   }
@@ -131,6 +137,9 @@
   transform: scale(.6);
   margin-left: 1rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/03.webp);
+  @include m.phone_414 {
+    margin-left: 2rem;
+  }
   @include m.tablet_760 {
     margin-left: 1rem;
   }
@@ -149,6 +158,9 @@
   transform: scale(.6);
   margin-left: 1rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/04.webp);
+  @include m.phone_414 {
+    margin-left: 2rem;
+  }
   @include m.tablet_760 {
     margin-left: 1rem;
   }
