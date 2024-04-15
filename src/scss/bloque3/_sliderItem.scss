@@ -56,11 +56,11 @@
   }
   @include m.desktop_1440 {
     width: 80%;
-    height: 39rem;
+    height: 43rem;
   }
   @include m.desktop_1920 {
     width: 73%;
-    height: 41rem;
+    // height: 41rem;
   }
   .item__image {
     height: 14rem;
