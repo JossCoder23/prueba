@@ -52,6 +52,7 @@
   }
   @include m.desktop_1280 {
     width: 82%;
+    height: 41rem;
   }
   @include m.desktop_1440 {
     width: 80%;
@@ -106,7 +107,7 @@
   @include m.desktop_1020 {
     margin-left: 2rem;
   }
-  @include m.desktop_1360 {
+  @include m.desktop_1280 {
     margin-left: 0;
   }
   @include m.desktop_1920 {
@@ -127,7 +128,7 @@
   @include m.desktop_1020 {
     margin-left: 2rem;
   }
-  @include m.desktop_1360 {
+  @include m.desktop_1280 {
     margin-left: 0;
   }
   @include m.desktop_1920 {
@@ -148,7 +149,7 @@
   @include m.desktop_1020 {
     margin-left: 2rem;
   }
-  @include m.desktop_1360 {
+  @include m.desktop_1280 {
     margin-left: 0;
   }
   @include m.desktop_1920 {
@@ -169,7 +170,7 @@
   @include m.desktop_1020 {
     margin-left: 2rem;
   }
-  @include m.desktop_1360 {
+  @include m.desktop_1280 {
     margin-left: 0;
   }
   @include m.desktop_1920 {

@@ -11,6 +11,9 @@
   @include m.desktop_1020 {
     background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/admision_top_back.webp);
   }
+  @include m.desktop_1280 {
+    height: 60rem;
+  }
   @include m.desktop_1360 {
     height: 65rem;
   }
