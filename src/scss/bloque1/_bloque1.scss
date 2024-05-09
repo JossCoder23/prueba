@@ -22,8 +22,14 @@
     grid-template-columns: repeat(2, 1fr);
     background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/admision_top_back.webp);
   }
+  @include m.desktop_1280 {
+    width: 100rem;
+  }
   @include m.desktop_1360 {
     width: v.$max-width-1360;
+  }
+  @include m.desktop_1920 {
+    width: 125rem;
   }
 }
 
@@ -47,8 +53,14 @@
     height: 63rem;
     position:initial;
   }
-  @include m.desktop_1360 {
+  @include m.desktop_1280 {
     height: 73rem;
+  }
+  @include m.desktop_1360 {
+    height: 76rem;
+  }
+  @include m.desktop_1920 {
+    height: 86rem;
   }
 }
 
@@ -72,11 +84,18 @@
     top: 9rem;
     left: 0rem;
   }
+  @include m.desktop_1280 {
+    top: 15rem;
+    height: 11rem;
+    width: 27rem;
+  }
   @include m.desktop_1360 {
     top: 16rem;
-    left: -2rem;
-    height: 8rem;
+    left: 0rem;
     width: 29rem;
+  }
+  @include m.desktop_1920 {
+    top: 22rem;
   }
 }
 
@@ -96,8 +115,11 @@
     top: 24rem;
     left: 0;
   }
-  @include m.desktop_1360 {
-    top: 29rem;  
+  @include m.desktop_1280 {
+    top: 29rem;
+  }
+  @include m.desktop_1920 {
+    top: 37rem;
   }
   h1 {
     padding-bottom: 1rem;
@@ -124,8 +146,14 @@
       display: grid;
       font-size: 2.5rem;
     }
+    @include m.desktop_1280 {
+      font-size: 3rem;  
+    }
     @include m.desktop_1360 {
       font-size: 3.2rem;
+    }
+    @include m.desktop_1920 {
+      font-size: 4rem;
     }
   }
   .top__title--bottom {
@@ -142,8 +170,11 @@
     @include m.desktop_1020 {
       font-size: 3.5rem;
     }
-    @include m.desktop_1360 {
-      font-size: 4rem;
+    @include m.desktop_1280 {
+      font-size: 4.3rem;
+    }
+    @include m.desktop_1920 {
+      font-size: 5.5rem;
     }
   }
 }
@@ -161,14 +192,23 @@
     right: 15rem;
   }
   @include m.desktop_1020 {
-    right: 35.5rem;
+    right: 36rem;
     height: 42rem;
     width: 34rem;
   }
-  @include m.desktop_1360 {
+  @include m.desktop_1280 {
     height: 47rem;
     width: 39rem;
-    right: 34.5rem;
+  }
+  @include m.desktop_1360 {
+    right: 38rem;
+    height: 50rem;
+    width: 41rem;
+  }
+  @include m.desktop_1920 {
+    right: 39.5rem;
+    height: 52rem;
+    width: 43rem;
   }
 }
 
@@ -198,10 +238,14 @@
     left: 0;
     top: 35rem;
   }
-  @include m.desktop_1360 {
-    width: 18rem;
-    height: 11rem;
+  @include m.desktop_1280 {
     top: 42rem;
+    width: 20rem;
+    height: 11rem;
+  }
+  @include m.desktop_1920 {
+    top: 57rem;
+    width: 23rem;
   }
 }
 

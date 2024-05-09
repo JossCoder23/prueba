@@ -31,6 +31,14 @@
         // margin-right: 7rem;
         // margin-top: 4rem;
     }
+    @include m.desktop_1360 {
+        width: 39rem;
+        height: 57rem;
+    }
+    @include m.desktop_1920 {
+        width: 41rem;
+        height: 60rem;
+    }
     // @include m.desktop_1280 {
 
     //     margin-right: 13rem;
