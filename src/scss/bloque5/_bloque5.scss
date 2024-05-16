@@ -5,9 +5,28 @@
   height: auto;
   position: relative;
   background-color: white;
-  margin-bottom: 2rem;
+  // margin-bottom: 2rem;
   @include m.tablet_760 {
     display: grid;
     justify-content: center;
   }
+}
+
+.swiper-pagination3 {
+  width: 20rem;
+  height: 3rem;
+  position: relative;
+  // background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 2.5rem !important;
+  z-index: 20;
+}
+
+
+.bullet3 {
+  color: transparent;
+  background-color: black !important;
+  z-index: 20;
 }

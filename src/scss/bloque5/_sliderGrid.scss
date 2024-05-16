@@ -1,0 +1,26 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.slider__grid3 {
+    position: relative;
+    display: flex;
+    height: auto;
+    // justify-content: center;
+}
+
+// .eventsContainer__grid--conversatorios {  
+//     display: grid;
+//     position: relative;
+//     display: flex;
+//     width: 100%;
+// }
+
+// .bloque5__grid {
+//     // background-color: red;
+//     display: grid;
+//     justify-content: center;
+// }
+
+.eventsContainer__grid .swiper-wrapper {
+    transition-timing-function: linear;
+}

@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque5__slider {
+    height: auto;
+    position: relative;
+    // display: flex;
+    @include m.desktop_1020 {
+        margin-top: 3rem;
+    }
+    @include m.desktop_1360 {
+        width: 100%;
+        // background-color: yellow;
+        display: grid;
+        justify-content: center;
+    }
+    @include m.desktop_1360 {
+        margin-top: 6rem;
+    }
+}
