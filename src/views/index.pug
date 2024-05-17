@@ -74,7 +74,7 @@ html(lang="es")
                                         option(value='DNI') DNI
                                         option(value='CarnédeExtranjería') Carnet de Extranjeria
                                         option(value='Pasaporte') Pasaporte
-                                    input(id="LEADCF21" type="text" name="LEADCF21" maxlength="20" placeholder="Nro de documento*" required)
+                                    input(id="LEADCF21" type="text" name="LEADCF21" maxlength="20" placeholder="Nro de documento*" required disabled="true")
                                 input#Mobile(type="text" name="Mobile" maxlength="9" pattern="9[0-9]{8}" placeholder="Celular*" required)
                                 input#Email(type="text" name="Email" maxlength="100" ftype='email' placeholder="Correo*" required)
                                 select#LEADCF6(name="LEADCF6" required)
@@ -175,6 +175,12 @@ html(lang="es")
                                     let url = window.location.href
                                     let urlValue = document.getElementById('LEADCF168');
                                     let inputCheckbox = document.getElementById('LEADCF198');
+                                    let inputTypeDocument = document.getElementById('LEADCF20');
+                                    let inputNumDocument = document.getElementById('LEADCF21');
+                                    inputTypeDocument.addEventListener("change", () => {
+                                        inputNumDocument.removeAttribute("disabled");
+                                        inputNumDocument.style.backgroundColor = "#FFD520";
+                                    })
                                     function onlyOne(checkbox, message) {
                                         inputCheckbox.value = message;
                                         var checkboxes = document.getElementsByName('check')

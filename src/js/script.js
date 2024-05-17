@@ -117,8 +117,8 @@ window.addEventListener("load", () => {
     //     container__career5.classList.toggle("salud2");
     // })
 
-    // let bloque2__button = document.querySelector('.change_button');
-    // let bloque4__button = document.querySelector('.bloque4__button--container');
+    let bloque2__button = document.querySelector('.change_button');
+    let bloque4__button = document.querySelector('.bloque4__button--container');
 
     if(screen.width > 1020 ) {
         bloque2__button.setAttribute("onclick", "window.scrollTo({top:50, behavior: 'smooth'});")

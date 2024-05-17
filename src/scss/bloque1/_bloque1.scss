@@ -5,6 +5,7 @@
   height: auto;
   position: relative;
   //aca poner el max-width
+  padding-top: 1rem;
   @include m.desktop_1020 {
     display: grid;
     justify-content: center;
@@ -34,19 +35,22 @@
 }
 
 .bloque1__top {
-  height: 48rem;
+  // height: 48rem;
+  height: 30rem;
   background: center/contain no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/admision_top_back.webp);
   position: relative;
   overflow: hidden;
   @include m.phone_380 {
-    height: 50rem;
+    // height: 50rem;
+    height: 32rem;
   }
   @include m.phone_414 {
     max-width: 40rem;
   }
   @include m.tablet_760 {
     max-width: 100%;
-    height: 60rem;
+    // height: 60rem;
+    height: 40rem;
   }
   @include m.desktop_1020 {
     background: none;
@@ -180,18 +184,20 @@
 }
 
 .bloque1__top--image {
-  height: 30rem;
-  width: 25rem;
+  // height: 30rem;
+  // width: 25rem;
   position: absolute;
   bottom: 0;
   right: 1rem;
   background: center/cover no-repeat url(https://lp.cayetano.edu.pe/wp-content/uploads/2024/04/chicaadmision.webp);
+  display: none;
   @include m.tablet_760 {
     height: 36rem;
     width: 28rem;
     right: 15rem;
   }
   @include m.desktop_1020 {
+    display: block;
     right: 36rem;
     height: 42rem;
     width: 34rem;
